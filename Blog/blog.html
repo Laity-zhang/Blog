@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>博客详情</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+		<!-- <link rel="stylesheet" href="./static/css/semantic.min.css" /> -->
+		<link rel="stylesheet" href="./static/css/me.css"/>
+	</head>
+	<body>
+		<!-- 导航 -->
+		<nav class="ui inverted attached segment m-padded-tb-mini">
+			<div class="ui container">
+				<div class="ui inverted stackable secondary menu">
+					<!-- 导航栏图标 -->
+					<h2 class="ui teal header item">Blog</h2>
+					<!-- 菜单 -->
+					<a href="#" class="item"><i class="mini home icon"></i>首页</a>
+					<a href="#" class="item"><i class="mini idea icon"></i>分类</a>
+					<a href="#" class="item"><i class="mini tags icon"></i>标签</a>
+					<a href="#" class="item"><i class="mini clone icon"></i>归档</a>
+					<a href="#" class="item"><i class="mini info icon"></i>关于我</a>
+					<!-- 搜索框 -->
+					<div class="right item">
+						<div class="ui icon input">
+							<input type="text" placeholder="Serach...">
+							<i class="search link icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 中间内容 -->
+		<div class="m-container-small m-padded-tb-large">
+			<div class="ui container">
+				<!-- 头部 -->
+				<div class="ui top attached segment">
+					<div class="ui horizontal link list">
+						<div class="item">
+							<!-- 此处图片大小建议100*100 -->
+							<img src="./static/images/test.jpg" alt="" class="ui avatar image" >
+							<div class="content"><a href="#" class="header">张兆年</a></div>
+						</div>
+						<div class="item">
+							<i class="calendar icon"></i> 2020-10-12
+						</div>
+						<div class="item">
+							<i class="eye icon"></i> 2345
+						</div>
+					</div>
+				</div>
+				
+				<!-- 图片区域 -->
+				<div class="ui attached segment">
+					<img src="./static/images/test2.jpg" alt="" class="ui fluid rounded image" >
+				</div>
+				
+				<!-- 内容区域 -->
+				<div class="ui attached padded segment">
+					<!-- 原创按钮 -->
+					<div class="ui right aligned basic segment">
+						<div class="ui orange  basic label">原创</div>
+					</div>
+					
+					<!-- 标题 -->
+					<h2 class="ui center aligned header">人无完人，请多包容！</h2>
+					<br>
+					
+					<!-- 内容 -->
+					<div id="content" class="m-padded-lr m-padded-tb-large">
+						<p>生而为人，哪有尽善尽美，哪有天衣无缝，每个人都有缺点不足，因为金无足赤，每个人都有私心杂念，因为人无完人，所以互相理解点，彼此包容点，人生才能走的顺畅。</p>
+						<h2>1</h2>
+						<p>我们都有心事，不是谁都能懂，不是谁都能疼，太多的委屈只能隐藏，令人心情烦躁，太多的压力只能硬扛，令人精神崩溃，有时脾气很大，有时心情很差，皆是因为没人在乎。</p>
+						<p></p>
+						<h2>2</h2>
+						<p>感情再深，不理解也会淡，不包容也会远，人和人相处不仅有爱，还要换位思考，心和心相惜不仅有情，还要彼此包容，你体谅我辛苦，我理解你不易，关系才能更近一步。</p>
+						<p></p>
+						<h2>3</h2>
+						<p>活在这个世上，各有各的辛酸，各有各的无奈，别以为有钱人就快乐，富有富的烦恼，别以为没钱人就难过，穷有穷的开心，穷也好富也罢，都有个共同点，那就是需要人理解。</p>
+						<p></p>
+						<h2>4</h2>
+						<p>人无完人，请多包容，高guan也会犯错，平民也有善举，别拿长处比别人的短处，因为尺有所短，别拿优点比别人的缺点。因为寸有所长，缺点谁都会有，错误谁都会犯，就看你怎么去对待了。</p>
+						<p></p>
+						<h2>5</h2>
+						<p>人无完人，请多包容，包容别人缺点，宽恕自己罪过，有了矛盾先反省自己，是否做的都对，发生冲突先找找原因，是否完美无缺，懂得换位思考，才能收获真情，不要动不动就责怪别人。</p>
+						<p></p>
+						<h2>6</h2>
+						<p>人无完人，请多包容，人和人之间多一份包容，就多一份靠近，事和事之间多一份包容，就多一份认同，情和情之间多一份包容，就多一份温馨，心和心之间多一份包容，就多一份情深。</p>
+						<p></p>
+					</div>
+					
+					<!-- 标签 -->
+					<div class="m-padded-lr">
+						<div class="ui basic teal left pointing label">方法论</div>
+					</div>
+					<!-- 赞赏按钮 -->
+					<div class="ui center aligned basic segment">
+						<button id="payButton" class="ui orange basic circular button">赞赏</button>
+					</div>
+					<!-- 弹窗二维码 -->
+					<div class="ui payQR flowing popup transition hidden">
+						<div class="ui orange basic label">
+							<div class="ui images" style="font-size: inherit !important;">
+								<div class="image">
+									<img src="static/images/test.jpg" alt="" class="ui bordered rounded image"style="width: 120px;" >
+								</div>
+								<div>支付宝</div>
+								<div class="image">
+									<img src="static/images/test.jpg" alt="" class="ui bordered rounded image"style="width: 120px;" >
+								</div>
+								<div>微信</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+				<div class="ui attached positive message">
+					博客信息
+				</div>
+				<div class="ui bottom attached segment">
+					留言区域
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<br>
+		
+		<!-- 底部 -->
+		<footer class="ui inverted vertical segment m-padded-tb-massive">
+			<div class="ui  center aligned container">
+				<div class="ui inverted divided stackable grid">
+					<div class="four wide column">
+						<div class="ui inverted link list">
+							<div class="item">
+								<img src="./static/images/test.jpg" class="ui rounded image" style="width:110px;height: 110px;">
+							</div>	
+						</div>
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spacing">最新博客</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">用户故事 (User Stroy)</a>
+							<a href="#" class="item">关于刻意联系的清单</a>
+							<a href="#" class="item">失败要趁早</a>
+						</div>
+					</div>
+					<div class="three wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spacing">联系我</h4>
+						<div class="ui inverted link list">
+							<a href="#" class="item">Email：1412974453@qq.com </a>
+							<a href="#" class="item">QQ：1412974453 </a>
+						</div>
+					</div>
+					<div class="six wide column">
+						<h4 class="ui inverted header m-text-thin m-text-spacing">Blog</h4>
+						<p class="m-text-thin m-text-spacing m-opacity-mini">这是我的个人博客，会分享关于编程，写作，思考相关的仍和内容，希望可以给来到这儿的人有所帮助......</p>
+					</div>
+				</div>
+				<div class="ui inverted section divider"></div>
+				<p class="m-text-thin m-text-spacing m-opacity-mini">Copyright   ©     2021 - 2022 Blog Designed by Zhangzhaonian</p>
+			</div>
+			
+		</footer>
+		
+		<!-- 引入外部js文件 -->
+		<!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+		<script src="./static/js/jquery.min.js"></script>
+		<script src="./static/js/semantic.min.js"></script>
+		
+		
+		<script>
+			$('#payButton').popup({
+				popup: $('.payQR.popup'),
+				on: 'click',
+				position: 'bottom center'
+			})
+		</script>
+	</body>
+</html>
